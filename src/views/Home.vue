@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import RepoCard from '../components/repo-card.vue';
+import RepoCard from '../components/RepoCard.vue';
 
 export default {
   name: 'Home',

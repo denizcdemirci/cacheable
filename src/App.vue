@@ -1,13 +1,20 @@
 <template>
   <div id="app">
-    <nav class="navbar navbar-light bg-light mb-4">
-      <div class="container">
-        <router-link to="/" class="navbar-brand">Homepage</router-link>
-      </div>
-    </nav>
+    <navbar />
     <router-view/>
   </div>
 </template>
+
+<script>
+import Navbar from './components/Navbar.vue';
+
+export default {
+  name: 'App',
+  components: {
+    Navbar,
+  },
+};
+</script>
 
 <style lang="scss">
 @import 'node_modules/bootstrap/scss/bootstrap';
